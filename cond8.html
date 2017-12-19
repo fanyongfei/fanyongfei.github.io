@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>发绣博物馆</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        h2,h3{
+            font-weight: normal;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .wrap{
+            padding: 15px;
+        }
+        .tt2{
+            color: #a0a0a1;
+            height: 36px;
+            line-height: 36px;
+        }
+        .tt2 a{
+            text-decoration: none;
+            color: #607fa6;
+        }
+        .adwp{
+            padding: 15px;
+            margin-top: 20px;
+            border:#e0e0e0 solid 1px;
+        }
+        .adwp h2{
+            font-size: 16px;
+            color: #363636;
+        }
+        .adwp h3{
+            color: #a0a0a1;
+            padding-left: 7px;
+            font-size: 12px;
+        }
+        .contt{
+            color: #777;
+            text-align: center;
+            padding-top: 15px;
+            height: 126px;
+            background: url("images/tbg.jpg") no-repeat center top;
+        }
+        .contt div{
+            padding-bottom: 25px;
+            color: #97adac;
+        }
+        .contwp{
+
+        }
+        .contwp p{
+            font-size: 16px;
+            text-indent: 2em;
+            color: #5d5d5d;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .zzico{
+            display: inline-block;
+            height: 16px;
+            line-height: 16px;
+            background: url("images/zz.jpg") no-repeat left center;
+            padding-left: 26px;
+        }
+        .floowp{
+            color: #777;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>《韩熙载夜宴图》画卷八讲解</h1>
+    <div class="tt2">
+        2017-12-17 <a href="#">金鑫股份</a>
+    </div>
+    <img src="images/dimg8.png" alt=""/>
+
+    <div class="adwp">
+        <h2>《韩熙载夜宴图》画卷八讲解</h2>
+        <h3>来自金鑫股份</h3>
+        <audio id="audiomp3" controls src="media/ad8.mp3" autoplay="autoplay"></audio>
+    </div>
+    <div class="contt">
+        <div>点上播放键即可收听音频</div>
+        文章
+    </div>
+    <div class="contwp">
+        <p>
+            曲尽人散夜未央，宾客们仍然意犹未尽，有的站在一旁与女伎谈心调笑，倘若要说尽这世界的所有情话，有的则拥抱着女伎悄声说话传情达一诉衷肠。韩熙载重新穿上了黄衣外衫，右手还拿着鼓槌仿佛意犹未尽还想再奏一曲，端立正中微微挥动着左手与宾客们道别，神情有些凝重不知是遗憾于宴会结束的太早，还是另有所想。这一场盛大的夜宴就此结束，欢歌纵舞、喜乐调笑的声音仍还余音绕梁，而那些苦闷与忧愁都在浓厚的夜色里隐去。</p>
+
+    </div>
+
+    <div class="floowp">
+        <span class="fl">阅读500</span>
+        <span class="zzico fr">120</span>
+    </div>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
+<script> 
+     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+     document.getElementById('audiomp3').play(); 
+    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('audiomp3').play(); 
+    }, false); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>发绣博物馆</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        h2,h3{
+            font-weight: normal;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .wrap{
+            padding: 15px;
+        }
+        .tt2{
+            color: #a0a0a1;
+            height: 36px;
+            line-height: 36px;
+        }
+        .tt2 a{
+            text-decoration: none;
+            color: #607fa6;
+        }
+        .adwp{
+            padding: 15px;
+            margin-top: 20px;
+            border:#e0e0e0 solid 1px;
+        }
+        .adwp h2{
+            font-size: 16px;
+            color: #363636;
+        }
+        .adwp h3{
+            color: #a0a0a1;
+            padding-left: 7px;
+            font-size: 12px;
+        }
+        .contt{
+            color: #777;
+            text-align: center;
+            padding-top: 15px;
+            height: 126px;
+            background: url("images/tbg.jpg") no-repeat center top;
+        }
+        .contt div{
+            padding-bottom: 25px;
+            color: #97adac;
+        }
+        .contwp{
+
+        }
+        .contwp p{
+            font-size: 16px;
+            text-indent: 2em;
+            color: #5d5d5d;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .zzico{
+            display: inline-block;
+            height: 16px;
+            line-height: 16px;
+            background: url("images/zz.jpg") no-repeat left center;
+            padding-left: 26px;
+        }
+        .floowp{
+            color: #777;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>《韩熙载夜宴图》画卷十讲解</h1>
+    <div class="tt2">
+        2017-12-17 <a href="#">金鑫股份</a>
+    </div>
+    <img src="images/dimg10.png" alt=""/>
+
+    <div class="adwp">
+        <h2>《韩熙载夜宴图》画卷十讲解</h2>
+        <h3>来自金鑫股份</h3>
+        <audio id="audiomp3" controls src="media/ad10.mp3" autoplay="autoplay"></audio>
+    </div>
+    <div class="contt">
+        <div>点上播放键即可收听音频</div>
+        文章
+    </div>
+    <div class="contwp">
+        <p>
+            《韩熙载夜宴图》中的家具反映出唐宋之际人们从席地而坐逐步转变为垂足而坐所带来室内陈设的变化，也为该画作摹本的缎带提供了佐证。卷中有6把带有连体脚踏的靠背椅，这些椅子均为无扶手曲搭脑椅，其搭脑两端上翘宛如牛角，也被称之为“牛头椅”，此家具在宋元期间很流行。南唐时期的家具多为“矮足矮坐”，而画卷中则更偏向宋代风格，桌椅皆结构简练，用材细劲，多使用硬木材质牢固。卷中出现最多的家具之一便是屏风，最早的功能是挡风遮蔽，随着工艺的进步逐渐演进为兼具实用些和装饰性的陈设器物，不同形制的屏风，将夜宴的多个场景有序分隔和巧妙衔接，使得画面浑然一体、气脉相连，是此画卷在构图方面最为人称道的地方。屏风上所绘的图像，在构图和笔墨上，表现出明显的宋人山水的特征，也是鉴定其绘制年代的依据之一。</p>
+
+    </div>
+
+    <div class="floowp">
+        <span class="fl">阅读500</span>
+        <span class="zzico fr">120</span>
+    </div>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
+<script> 
+     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+     document.getElementById('audiomp3').play(); 
+    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('audiomp3').play(); 
+    }, false); 
+</script>
+
+</body>
+</html>

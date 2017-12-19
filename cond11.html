@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>发绣博物馆</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        h2,h3{
+            font-weight: normal;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .wrap{
+            padding: 15px;
+        }
+        .tt2{
+            color: #a0a0a1;
+            height: 36px;
+            line-height: 36px;
+        }
+        .tt2 a{
+            text-decoration: none;
+            color: #607fa6;
+        }
+        .adwp{
+            padding: 15px;
+            margin-top: 20px;
+            border:#e0e0e0 solid 1px;
+        }
+        .adwp h2{
+            font-size: 16px;
+            color: #363636;
+        }
+        .adwp h3{
+            color: #a0a0a1;
+            padding-left: 7px;
+            font-size: 12px;
+        }
+        .contt{
+            color: #777;
+            text-align: center;
+            padding-top: 15px;
+            height: 126px;
+            background: url("images/tbg.jpg") no-repeat center top;
+        }
+        .contt div{
+            padding-bottom: 25px;
+            color: #97adac;
+        }
+        .contwp{
+
+        }
+        .contwp p{
+            font-size: 16px;
+            text-indent: 2em;
+            color: #5d5d5d;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .zzico{
+            display: inline-block;
+            height: 16px;
+            line-height: 16px;
+            background: url("images/zz.jpg") no-repeat left center;
+            padding-left: 26px;
+        }
+        .floowp{
+            color: #777;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>《韩熙载夜宴图》画卷十一讲解</h1>
+    <div class="tt2">
+        2017-12-17 <a href="#">金鑫股份</a>
+    </div>
+    <img src="images/dimg11.png" alt=""/>
+
+    <div class="adwp">
+        <h2>《韩熙载夜宴图》画卷十一讲解</h2>
+        <h3>来自金鑫股份</h3>
+        <audio id="audiomp3" controls src="media/ad11.mp3" autoplay="autoplay"></audio>
+    </div>
+    <div class="contt">
+        <div>点上播放键即可收听音频</div>
+        文章
+    </div>
+    <div class="contwp">
+        <p>五代十国时期，绘画艺术成就显著，人物画更是名家荟萃，其中南唐画家顾闳中的绘画作品《韩熙载夜宴图》更是堪称中国古代绘画的扛鼎之作，为中国十大传世名画之一。</p>
+        <p>此画卷据传系宫廷画家顾闳中奉后主李煜之命而画，它以连环长卷的方式描摹了南唐巨宦韩熙载家开宴行乐的场景，全长三米，分“听乐”、“观舞”、“休息”、“清吹”及“宴散”五个段落，每段以屏风巧妙隔开，前后相连又各自独立，图中有许多独具匠心的构思，不同物象之间的笔墨运用又富有变化。五个场景。四十五个人物的音容笑貌无一不活脱卷上，一定程度反映了在南唐已摇摇欲坠的形势下贵族阶级醉生梦死的腐朽生活。</p>
+        <p>此次所展现的《韩熙载夜宴图》为发绣大师陈伯余所创作的艺术品，这幅发绣长卷线条准确流畅，做工精细灵动，充满表现力，设色工丽雅致，神韵独出，富有层次感，是不可多得的发绣精品，曾获“中国工艺美术文化创意奖”金奖。
+
+        </p>
+
+    </div>
+
+    <div class="floowp">
+        <span class="fl">阅读500</span>
+        <span class="zzico fr">120</span>
+    </div>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
+<script> 
+     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+     document.getElementById('audiomp3').play(); 
+    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('audiomp3').play(); 
+    }, false); 
+</script>
+
+</body>
+</html>

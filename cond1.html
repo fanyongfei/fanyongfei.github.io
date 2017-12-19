@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>发绣博物馆</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        h2,h3{
+            font-weight: normal;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .wrap{
+            padding: 15px;
+        }
+        .tt2{
+            color: #a0a0a1;
+            height: 36px;
+            line-height: 36px;
+        }
+        .tt2 a{
+            text-decoration: none;
+            color: #607fa6;
+        }
+        .adwp{
+            padding: 15px;
+            margin-top: 20px;
+            border:#e0e0e0 solid 1px;
+        }
+        .adwp h2{
+            font-size: 16px;
+            color: #363636;
+        }
+        .adwp h3{
+            color: #a0a0a1;
+            padding-left: 7px;
+            font-size: 12px;
+        }
+        .contt{
+            color: #777;
+            text-align: center;
+            padding-top: 15px;
+            height: 126px;
+            background: url("images/tbg.jpg") no-repeat center top;
+        }
+        .contt div{
+            padding-bottom: 25px;
+            color: #97adac;
+        }
+        .contwp{
+
+        }
+        .contwp p{
+            font-size: 16px;
+            text-indent: 2em;
+            color: #5d5d5d;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .zzico{
+            display: inline-block;
+            height: 16px;
+            line-height: 16px;
+            background: url("images/zz.jpg") no-repeat left center;
+            padding-left: 26px;
+        }
+        .floowp{
+            color: #777;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>《韩熙载夜宴图》画卷一讲解</h1>
+    <div class="tt2">
+        2017-12-17 <a href="#">金鑫股份</a>
+    </div>
+    <img src="images/dimg1.jpg" alt=""/>
+
+    <div class="adwp">
+        <h2>《韩熙载夜宴图》画卷一讲解</h2>
+        <h3>来自金鑫股份</h3>
+        <audio id="audiomp3" controls src="media/ad1.mp3" autoplay="autoplay"></audio>
+    </div>
+    <div class="contt">
+        <div>点上播放键即可收听音频</div>
+        文章
+    </div>
+    <div class="contwp">
+        <p>
+            长卷中的主人公为韩熙载，韩熙载（902-970），字叔言，北海人（今山东潍坊）人。
+        </p>
+        <p>唐朝末年，出身名门望族的韩熙载荣登进士，以擅长文章书画名震一时，后来由于父亲光嗣因事坐诛不得不逃奔江--南投顺南唐，历事李昇、李璟、李煜三代帝王，以其杰出的政治才干任宫中重职，然而宦途坎坷君主由于其出身和性格心存戒备，且朝钢败落官场腐败气数将尽，韩熙载只能为求自保韬光养晦，将自己的政治抱负藏于心底。</p>
+
+        <p>纵观全卷，韩熙载总共出现了五次，从倚栏倾听，到回收击鼓，最后曲终人散，各个不同场合始终眉峰双锁，若有所思，心不在焉。画家将主人公韩熙载这样一个满腔抱负但又壮志未酬的士大夫形象刻画得入木三分，其忧郁踌躇的表情与其他宾客家伎的纵情嬉戏形成了鲜明的对比，仿佛有“众人皆醉我独醒”的惆怅之意。整个宴会沉浸在在纸醉金迷的夜宴行乐中，暗示着韩熙载以失望定终身，而这种落寞心情，反过来又加强了对美好生活的追求与向往。</p>
+
+    </div>
+
+    <div class="floowp">
+        <span class="fl">阅读500</span>
+        <span class="zzico fr">120</span>
+    </div>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
+<script> 
+     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+     document.getElementById('audiomp3').play(); 
+    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('audiomp3').play(); 
+    }, false); 
+</script>
+
+</body>
+</html>
